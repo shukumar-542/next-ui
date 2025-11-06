@@ -1,27 +1,13 @@
-import { Spotlight } from "@/components/ui/spotlight";
-import { cn } from "@/lib/utils";
+import HeroSection from "@/components/HeroSection/HeroSection";
+
+
 
 export default function Home() {
   return (
     <div className="relative flex h-160 w-full overflow-hidden  bg-black-100 antialiased md:items-center md:justify-center">
 
-      <Spotlight className="-top-40 -left-10 md:-top-20 md:left-60 h-[70vh]" fill="white" />
-      <Spotlight className="top-10 left-full h-[70vh] w-[50vw]" fill="pruple" />
-      <Spotlight className="top-12 left-12 h-[80vh] w-[50vw]" fill="blue" />
 
-
-        <div className="relative flex h-200 w-full items-center justify-center bg-white dark:bg-black-100">
-          <div
-            className={cn(
-              "absolute inset-0",
-              "bg-size-[80px_80px]",
-              "bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-              "dark:bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-            )}
-          />
-
-      </div>
-
+      <HeroSection />
 
     </div>
   );
